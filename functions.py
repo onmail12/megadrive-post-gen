@@ -23,9 +23,7 @@ def getIdFromUrl(link: str):
 
 
 def size(id):
-    os.chdir("D:\Games\Software\gclone")
     cmd = f"gclone size GC:{{{id}}}"
-
     output = os.popen(cmd).read()
     output = output.split()
     unit = output[6]
